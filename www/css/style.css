@@ -1,0 +1,91 @@
+*
+{
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+.topo
+{
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.topoModal
+{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.corpo
+{
+  margin-top: 5%;
+}
+.subtitulo
+{
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.botao-menu
+{
+  margin-left: 3%;
+  margin-right: 3%; 
+}
+.navBotao
+{
+  margin-bottom: 2%;
+}
+.fechaModal
+{
+  color: white;
+}
+.cor-roxo
+{
+  background-image: linear-gradient(to right, #9d4edd , #7b2cbf);
+  color: white;
+}
+.modalMenu
+{
+  width: 75%;
+}
+.modal-contentMenu
+{
+  width: 75%;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: white;
+}
+.btnMenu:hover{
+  background-image: linear-gradient(to right, #9d4edd , #7b2cbf);
+  color: white;
+}
+.laranja
+{
+  color: #ff9100;
+}
+.roxo
+{
+  color: #9d4edd;
+}
+.bgRoxo
+{
+  background: #9d4edd;
+}
+.resultados
+{
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+.img
+{
+  width: 15vw;
+}
+.artistaNome
+{
+  margin-top: 2%;
+}
+.espaco
+{
+  margin-top: 1%;
+}

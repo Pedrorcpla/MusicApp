@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="lib/script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+</head>
+<body>
+<div class="container-fluid">
+  <header class="row text-white topo cor-roxo">
+    <div class="col-1 botao-menu">
+      <button class="btn text-white" data-bs-toggle="modal" data-bs-target="#menuModal"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="col-9" align="center">
+      <h2 id="txtTopo">Artistas</h2>
+    </div>
+  </header>
+
+  
+  <div class="row corpo">
+    <div class="col-9 offset-1">
+      <input type="hidden" id="linkDados" class="col-12 form-control rounded-pill">
+      <input type="text" id="buscaArtista" class="col-12 form-control rounded-pill" placeholder="  Digite o que procura...">
+    </div>
+    <div class="col-1">
+      <button class="btn" id="pesquisaArtista"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+  <div class="row corpo">
+    <div class="col-10 offset-1" align="center">
+      <p>Ao clicar no artista, você será redirecionado ao site da Vagalume.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10 offset-1" id="areaPesquisa">
+
+    </div>
+  </div>
+  <br>
+  <div class="col-10 offset-1 border-bottom" id="resulArtista">
+    
+  </div>
+</div>
+
+
+
+
+
+<!-- Menu Artista -->
+  <div class="modal fade" id="artistaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header cor-roxo text-white topoModal">
+          <h5 class="modal-title" id="nomeArtista"></h5>
+          <button type="button" class="btn fechaModal" data-bs-dismiss="modal"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="modal-body" id="dadosArtista">
+          <div class="row" id="detalhesArtista">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Artista -->
+
+<!-- Menu Lateral -->
+  <div class="modal modalMenu fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content modal-contentMenu">
+        <div class="modal-header cor-roxo text-white topoModal">
+          <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+          <button type="button" class="btn fechaModal" data-bs-dismiss="modal"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item btnMenu"><i class="fas fa-home"></i> Início</a>
+            <a href="musicasBusca.html" class="list-group-item btnMenu"><i class="fas fa-music"></i> Letras de Músicas</a>
+            <a href="artistasBusca.html" class="list-group-item btnMenu"><i class="fas fa-users"></i> Artistas</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do Menu -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

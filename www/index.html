@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="lib/script.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container-fluid">
+  <header class="row text-white topo cor-roxo">
+    <div class="col-1 botao-menu">
+      <button class="btn text-white" data-bs-toggle="modal" data-bs-target="#menuModal"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="col-9" align="center">
+      <h2>Início</h2>
+    </div>
+  </header>
+
+  <div class="row bg-white corpo">
+    <div class="col-10 offset-1 border-bottom border-2" align="center">
+      <h2>Bem-Vindo(a) ao <span class="roxo">Music</span>!</h2>
+      <p>A plataforma em desenvolvimento feita ver a letra de suas músicas favoritas, além de suas traduções!</p>
+    </div>
+  </div>
+
+  <div class="row subtitulo">
+    <div class="col-10  offset-1" align="center">
+      <h3 class="roxo">Artistas do Momento</h3>
+    </div>
+  </div>
+  <div id="carrosselInicial" class="carousel slide border-bottom border-2" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <a href="" class="carousel-item active">
+        <img src="https://woomagazine.com.br/wp-content/uploads/2020/05/Imagine-Dragons.jpg" class="d-block w-100" alt="...">
+      </a>
+      <a href="" class="carousel-item ">
+        <img src="http://pm1.narvii.com/6396/3faf99c74429c5edc506d73c182a9011e5a937c2_00.jpg" class="d-block w-100" alt="...">
+      </a>
+      <a href="" class="carousel-item">
+        <img src="https://imagens.brasil.elpais.com/resizer/6aLm-wC9YWzg9drEIFiZnCMDUyg=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/EUXHECTFLNFBLAGGRH7UQPY4VY.jpg" class="d-block w-100" alt="...">
+      </a>
+      <a href="" class="carousel-item">
+        <img src="https://observatoriog.bol.uol.com.br/wordpress/wp-content/uploads/2017/08/ed_sheeran-1.jpg" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    <br>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselInicial" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselInicial" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="row" align="center">
+    <div class="col-10 offset-1 subtitulo">
+      <h3 class="roxo">Navegue por:</h3>
+    </div>
+  </div>
+  <div class="row" align="center">
+    <div class="col-10 offset-1">
+      <a href="musicasBusca.html" class="btn col-12 cor-roxo navBotao">Músicas</a>
+      <a href="artistasBusca.html" class="btn col-12 cor-roxo navBotao">Artistas</a>  
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Menu Lateral -->
+  <div class="modal modalMenu fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content modal-contentMenu">
+        <div class="modal-header cor-roxo text-white topoModal">
+          <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+          <button type="button" class="btn fechaModal" data-bs-dismiss="modal"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item btnMenu"><i class="fas fa-home"></i> Início</a>
+            <a href="musicasBusca.html" class="list-group-item btnMenu"><i class="fas fa-music"></i> Letras de Músicas</a>
+            <a href="artistasBusca.html" class="list-group-item btnMenu"><i class="fas fa-users"></i> Artistas</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do Menu -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
